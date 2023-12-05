@@ -50,7 +50,7 @@ export const Edit_Update_Details_Modal = ({
     setUser_data({ ...user_data, [key]: value });
   };
   const [imageName, setImageName] = useState("");
-  console.log("user_data", user_data);
+  console.log("user_data", edit_customer_data);
   return (
     <Custom_Modal is_open={showModal} on_close={on_close}>
       <Stack>
@@ -63,7 +63,7 @@ export const Edit_Update_Details_Modal = ({
           alignItems="center"
         >
           <Typography fontWeight="400" fontSize={25} color="white">
-            {edit_entry_id ? "Edit Customer" : "Add New Customer"}
+            {modalType === "edit" ? "Edit Customer" : "Add New Customer"}
           </Typography>
         </Stack>
         <Stack sx={{ pt: 2, px: 2 }}>

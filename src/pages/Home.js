@@ -65,13 +65,8 @@ export const Home = () => {
   const [modalType, setModalType] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [editId, setEditId] = useState();
-  const {
-    customers_data,
-    get_customers_status,
-    get_customers_error,
-    sort_option,
-    sort_order,
-  } = useSelector((state) => state.customer_data);
+  const { customers_data, get_customers_status, get_customers_error } =
+    useSelector((state) => state.customer_data);
 
   const dispatch = useDispatch();
 
