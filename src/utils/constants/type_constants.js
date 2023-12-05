@@ -1,0 +1,9 @@
+const type_constants = {
+    GET_CUSTOMERS:"GET_CUSTOMERS",
+    POST_CUSTOMERS:"POST_CUSTOMERS",
+    EDIT_CUSTOMERS:"EDIT_CUSTOMERS",
+    DELETE_CUSTOMERS:"DELETE_CUSTOMERS",
+
+}
+
+export { type_constants }
